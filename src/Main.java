@@ -21,8 +21,8 @@ public class Main {
         
         int opcao;
         Grafo grafo = new Grafo();
-        String[] arquivoVertices = lerArquivo("vertices.txt");
-        String[] arquivoArestas = lerArquivo("arestas.txt");
+        String[] arquivoVertices = lerArquivo("verticesBrasil.txt");
+        String[] arquivoArestas = lerArquivo("arestasBrasil.txt");
         LinkedList<Vertice> vertices = criarVertices(arquivoVertices);
 
         String[] cores = {"azul", "vermelho", "verde", "roza", "amarelo", "preto", "cinza", "branco"};
@@ -171,7 +171,7 @@ public class Main {
         }
     }
 
-
+    // ABC
     public static void coloreGrafo(Grafo grafo, String[] cores) {
         inicializaCores(grafo, cores);
         for (int i = 1; i < grafo.getVertices().size(); i++) {
